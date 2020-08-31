@@ -31,7 +31,7 @@ namespace FlashScore.Additions
             {
                 PollingInterval = TimeSpan.FromMilliseconds(200)
             };
-            wait.Until(ExpectedConditions.ElementExists(By.CssSelector("div.description___37C6i_4 div")));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.CssSelector("div.description___37C6i_4 div")));
             
             var names = driver.FindElements(By.CssSelector("div.participantName___1pLLLzn a"));
             string firstPlayer = string.Empty;
@@ -65,7 +65,7 @@ namespace FlashScore.Additions
             {
                 throw new Exception("Ошибка при парсинге лиги. Блок не был найден.\n");
             }
-            var h2hMathes = driver.FindElements(By.CssSelector("div#detail div:nth-child(3) div.rows___NgVid83 div"));
+            var h2hMathes = driver.FindElements(By.XPath("//*[@id=\"detail\"]/div[6]/div[3]/div[2]/div"));
             if (h2hMathes.Count < minH2H)
             {
                 m.FirstPlayer = firstPlayer;
@@ -105,7 +105,7 @@ namespace FlashScore.Additions
                 driver.SwitchTo().Window(h2hWindow);
                 try
                 {
-                    wait.Until(ExpectedConditions.ElementExists(By.CssSelector("div#detail > div.summary___Cbl3b9P")));
+                    wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.CssSelector("div#detail > div.summary___Cbl3b9P")));
                 }
                 catch(TimeoutException)
                 {

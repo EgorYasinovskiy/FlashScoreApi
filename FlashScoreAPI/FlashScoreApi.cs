@@ -9,6 +9,8 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Threading.Tasks;
+using SeleniumExtras.WaitHelpers;
+using System.Linq;
 
 namespace FlashScore
 {
@@ -34,19 +36,19 @@ namespace FlashScore
             driver.Navigate().GoToUrl(league.ToLink());
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30))
             {
-                PollingInterval = TimeSpan.FromMilliseconds(200)
+                PollingInterval = TimeSpan.FromMilliseconds(500)
             };
             try
             {
-                wait.Until(ExpectedConditions.ElementExists(By.CssSelector("div#live-table div.event.event--fixtures")));
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.CssSelector("div.event__match")));
             }
-            catch
+            catch (Exception e)
             {
-                logger.Trace($"Матчи в лиге {league.ToTextString()} не найдены.");
+                logger.Error($"Матчи в лиге {league} не найдены.\n{e.Message}");
                 return matches;
             }
-         
-            foreach (var match in driver.FindElements(By.CssSelector("div#live-table div.event.event--fixtures div div div.event__match")))
+                    
+            foreach (var match in driver.FindElements(By.CssSelector("div.event__match")))
             {
                
                 var timeblock = match.FindElements(By.CssSelector("div.event__time"));
@@ -84,6 +86,7 @@ namespace FlashScore
             }
             logger.Trace($"Найдено матчей для парсинга {matches.Count}.");
             Console.Write("\rМатчей проверено 0 / {0} .", matches.Count);
+            var mainWindow = driver.CurrentWindowHandle;
             for (int i=0;i<matches.Count;i++)
             {
                 try
@@ -93,6 +96,12 @@ namespace FlashScore
                 }
                 catch(Exception e)
                 {
+                    foreach(var h in driver.WindowHandles.Where(h=>h.Equals(mainWindow)))
+                    {
+                        driver.SwitchTo().Window(h);
+                        driver.Close();
+                    }
+                    driver.SwitchTo().Window(mainWindow);
                     logger.Error($"Ошибка проверки матча по ссылке {matches[i].Link}.\n {e.Message}");
                 }
             }

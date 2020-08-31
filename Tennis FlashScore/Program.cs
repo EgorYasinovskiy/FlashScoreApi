@@ -19,4 +19,4 @@ namespace Tennis_FlashScore
             Application.Run(new MainForm());
         }
     }
-}
+    }

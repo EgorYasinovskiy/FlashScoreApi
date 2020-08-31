@@ -22,3 +22,4 @@ C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin
 C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\WebDriver.xml
 C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\WebDriver.Support.xml
 C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Release\Tennis FlashScore.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\SeleniumExtras.WaitHelpers.dll

@@ -124,7 +124,7 @@ namespace Tennis_FlashScore
                 {
                     logger.Error($"Ошибка - {exception.Message} при получении списка матчей. Повтор c в 3 часа ночи.");
                 }
-                matches = matches.OrderBy(m => m.StartTime).ToList();
+                matches = matches.Where(m=>m.H2HMatches.Count>=AppSettings.MinH2HCount).OrderBy(m => m.StartTime).ToList();
                 FeelDataGrid(matches);
                 while (IsWorking)
                 {
