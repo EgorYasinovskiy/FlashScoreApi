@@ -1,0 +1,24 @@
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Release\Tennis FlashScore.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Release\Tennis_FlashScore.MainForm.resources
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Release\Tennis_FlashScore.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Release\Tennis FlashScore.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Release\Tennis FlashScore.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\Tennis FlashScore.exe.config
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\Tennis FlashScore.exe
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\Tennis FlashScore.pdb
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Release\Tennis FlashScore.exe
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Release\Tennis FlashScore.pdb
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\NLog.config
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\FlashScoreAPI.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\Newtonsoft.Json.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\NLog.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\Telegram.Bot.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\WebDriver.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\WebDriver.Support.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\FlashScoreAPI.pdb
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\Newtonsoft.Json.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\NLog.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\Telegram.Bot.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\WebDriver.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Release\WebDriver.Support.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Release\Tennis FlashScore.csproj.CopyComplete

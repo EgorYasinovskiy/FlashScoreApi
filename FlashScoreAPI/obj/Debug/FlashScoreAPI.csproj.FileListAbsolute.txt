@@ -1,0 +1,11 @@
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreAPI\bin\Debug\FlashScoreAPI.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreAPI\bin\Debug\FlashScoreAPI.pdb
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreAPI\bin\Debug\WebDriver.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreAPI\bin\Debug\WebDriver.Support.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreAPI\bin\Debug\WebDriver.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreAPI\bin\Debug\WebDriver.Support.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreAPI\obj\Debug\FlashScoreAPI.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreAPI\obj\Debug\FlashScoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreAPI\obj\Debug\FlashScoreAPI.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreAPI\obj\Debug\FlashScoreAPI.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreAPI\obj\Debug\FlashScoreAPI.pdb

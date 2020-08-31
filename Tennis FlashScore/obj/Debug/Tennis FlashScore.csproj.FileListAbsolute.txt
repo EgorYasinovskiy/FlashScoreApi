@@ -1,0 +1,24 @@
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\NLog.config
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\Tennis FlashScore.exe.config
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\Tennis FlashScore.exe
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\Tennis FlashScore.pdb
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\FlashScoreAPI.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\NLog.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\Telegram.Bot.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\WebDriver.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\WebDriver.Support.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\FlashScoreAPI.pdb
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\NLog.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\Telegram.Bot.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\WebDriver.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\bin\Debug\WebDriver.Support.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Debug\Tennis FlashScore.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Debug\Tennis_FlashScore.MainForm.resources
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Debug\Tennis_FlashScore.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Debug\Tennis FlashScore.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Debug\Tennis FlashScore.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Debug\Tennis FlashScore.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Debug\Tennis FlashScore.exe
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\Tennis FlashScore\obj\Debug\Tennis FlashScore.pdb

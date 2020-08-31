@@ -1,0 +1,17 @@
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\bin\Debug\NLog.config
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\bin\Debug\FlashScoreApiTest1.exe.config
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\bin\Debug\FlashScoreApiTest1.exe
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\bin\Debug\FlashScoreApiTest1.pdb
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\bin\Debug\FlashScoreAPI.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\bin\Debug\NLog.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\bin\Debug\WebDriver.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\bin\Debug\WebDriver.Support.dll
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\bin\Debug\FlashScoreAPI.pdb
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\bin\Debug\NLog.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\bin\Debug\WebDriver.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\bin\Debug\WebDriver.Support.xml
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\obj\Debug\FlashScoreApiTest1.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\obj\Debug\FlashScoreApiTest1.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\obj\Debug\FlashScoreApiTest1.exe
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\obj\Debug\FlashScoreApiTest1.pdb
+C:\Users\Lenovo\Desktop\Разработка\FlashScoreAPI\FlashScoreApiTest1\obj\Debug\FlashScoreApiTest1.csprojAssemblyReference.cache
