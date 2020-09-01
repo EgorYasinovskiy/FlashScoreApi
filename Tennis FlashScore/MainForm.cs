@@ -110,14 +110,10 @@ namespace Tennis_FlashScore
                 List<Match> matches = new List<Match>();
                 try
                 {
-                    flag = false;
-                    if (DateTime.Now.TimeOfDay < TimeSpan.FromHours(5))
+                    matches = await api.GetMatchesOfSomeLeagues(l, DateTime.Now, AppSettings.MinH2HCount);
+                    if (DateTime.Now.TimeOfDay <= AppSettings.StartPosting)
                     {
-                        matches = await api.GetMatchesOfSomeLeagues(l, DateTime.Now, AppSettings.MinH2HCount);
-                    }
-                    else
-                    {
-                        matches = await api.GetMatchesOfSomeLeagues(l, DateTime.Now.AddDays(1), AppSettings.MinH2HCount);
+                        flag = false;
                     }
                 }
                 catch (Exception exception)
@@ -133,8 +129,10 @@ namespace Tennis_FlashScore
                     {
                         try
                         {
-                            flag = false;
+                            
                             matches = await api.GetMatchesOfSomeLeagues(l, DateTime.Now, AppSettings.MinH2HCount);
+                            flag = false;
+                            lastParse = DateTime.Now;
                         }
                         catch (Exception exception)
                         {
@@ -145,7 +143,14 @@ namespace Tennis_FlashScore
                                 return;
                             }
                         }
-                        matches = matches.Where(m => m.H2HMatches.Count >= AppSettings.H2HCountCheck).OrderBy(m => m.StartTime).ToList();
+                        matches = matches.Where
+                        (
+                            m =>
+                            m.H2HMatches.Count >= AppSettings.H2HCountCheck &&
+                            m.StartTime.TimeOfDay >= AppSettings.StartPosting &&
+                            m.StartTime.TimeOfDay <= AppSettings.EndPosting
+                            )
+                        .OrderBy(m => m.StartTime).ToList();
                         FeelDataGrid(matches);
                     }
                     if (error)
@@ -183,7 +188,6 @@ namespace Tennis_FlashScore
                     }
                     FeelDataGrid(matches);
                     Thread.Sleep(60 * 1000);
-                   
                 }
             });
         }
