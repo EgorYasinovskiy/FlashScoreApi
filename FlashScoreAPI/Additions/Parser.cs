@@ -2,6 +2,7 @@
 using FlashScore.Models;
 using NLog;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
@@ -75,6 +76,9 @@ namespace FlashScore.Additions
             }
             else
             {
+                Actions actions = new Actions(driver);
+                actions.MoveToElement(h2hMathes.Last());
+                actions.Perform();
                 m.FirstPlayer = firstPlayer;
                 m.SecondPlayer = secondPlayer;
                 m.League = league;

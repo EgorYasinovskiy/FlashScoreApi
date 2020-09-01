@@ -47,7 +47,19 @@ namespace FlashScore
                 logger.Error($"Матчи в лиге {league} не найдены.\n{e.Message}");
                 return matches;
             }
-                    
+            try
+            {
+                wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10))
+                {
+                    PollingInterval = TimeSpan.FromMilliseconds(500)
+                };
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("//*[@id=\"onetrust-accept-btn-handler\"]")));
+                driver.FindElement(By.XPath("//*[@id=\"onetrust-accept-btn-handler\"]")).Click();
+            }
+            catch
+            {
+
+            }
             foreach (var match in driver.FindElements(By.CssSelector("div.event__match")))
             {
                
@@ -96,7 +108,7 @@ namespace FlashScore
                 }
                 catch(Exception e)
                 {
-                    foreach(var h in driver.WindowHandles.Where(h=>h.Equals(mainWindow)))
+                    foreach(var h in driver.WindowHandles.Where(h=>!h.Equals(mainWindow)))
                     {
                         driver.SwitchTo().Window(h);
                         driver.Close();
