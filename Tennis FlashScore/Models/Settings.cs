@@ -18,6 +18,7 @@ namespace Tennis_FlashScore.Models
         public bool ProLeague { get; set; }
         public bool TTCup { get; set; }
         public bool WinCup { get; set; }
+        public bool SetkaCup { get; set; }
         public bool UseLink { get; set; }
         public int MinutesBeforePost { get; set; }
         public TimeSpan StartPosting { get; set; }
@@ -41,13 +42,13 @@ namespace Tennis_FlashScore.Models
                     return res;
                 }
             }
-            return new Settings(4, 4, 73.5, "key", true, true, true, false, 60, TimeSpan.FromHours(7), TimeSpan.FromHours(22));
+            return new Settings(5, 4, 73.5, "#PASTE_API_TOKEN_HERE#", true, true, false,true, false, 10, TimeSpan.FromHours(7), TimeSpan.FromHours(22));
         }
         public Settings()
         { 
         }
 
-        public Settings(int minH2HCount, int h2HCountCheck, double totalToCheck, string apiTelegramTokenKey, bool proLeague, bool tTCup, bool winCup, bool useLink, int minutesBeforePost, TimeSpan startPosting, TimeSpan endPosting)
+        public Settings(int minH2HCount, int h2HCountCheck, double totalToCheck, string apiTelegramTokenKey, bool proLeague, bool tTCup, bool winCup,bool setkaCup, bool useLink, int minutesBeforePost, TimeSpan startPosting, TimeSpan endPosting)
         {
             MinH2HCount = minH2HCount;
             H2HCountCheck = h2HCountCheck;
@@ -56,6 +57,7 @@ namespace Tennis_FlashScore.Models
             ProLeague = proLeague;
             TTCup = tTCup;
             WinCup = winCup;
+            SetkaCup = setkaCup;
             UseLink = useLink;
             MinutesBeforePost = minutesBeforePost;
             StartPosting = startPosting;

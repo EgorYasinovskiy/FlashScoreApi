@@ -8,15 +8,19 @@
         /// <summary>
         /// Лига Про Мужчины.
         /// </summary>
-        ProLeagueMen = 0x0001,
+        ProLeagueMen = 1,
         /// <summary>
         /// TT Cup Мужчины.
         /// </summary>
-        TTCupMen = 0x0010,
+        TTCupMen = 2,
         /// <summary>
         /// Win Cup Мужчины.
         /// </summary>
-        WinCupMen = 0x0100,
+        WinCupMen = 4,
+        /// <summary>
+        /// Setka Cup мужчины
+        /// </summary>
+        SetkaCupMen = 8
     }
 }
 

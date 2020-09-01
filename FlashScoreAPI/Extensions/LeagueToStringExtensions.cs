@@ -22,12 +22,14 @@ namespace FlashScoreAPI.Extensions
             switch (l)
             {
                 case Leagues.ProLeagueMen:
-                    return "Лига ПРО";
+                    return "\"Лига ПРО\"";
                 case Leagues.TTCupMen:
-                    return "TT CUP";
+                    return "\"TT CUP\"";
                 case Leagues.WinCupMen:
-                    return "Win CUP";
-                default:
+                    return "\"Win CUP\"";
+                case Leagues.SetkaCupMen:
+                    return "\"Setka Cup\"";
+                default: 
                     return string.Empty;
             }
         }

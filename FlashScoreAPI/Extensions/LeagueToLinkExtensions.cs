@@ -1,4 +1,5 @@
 ﻿using FlashScore.Enums;
+using System;
 
 namespace FlashScore.Extensions
 {
@@ -22,8 +23,10 @@ namespace FlashScore.Extensions
                     return "https://www.flashscore.ru/table-tennis/others-men/tt-cup/fixtures/";
                 case Leagues.WinCupMen:
                     return "https://www.flashscore.ru/table-tennis/others-men/win-cup/fixtures/";
+                case Leagues.SetkaCupMen:
+                    return "https://www.flashscore.ru/table-tennis/others-men/setka-cup/fixtures/";
                 default:
-                    return null;
+                    return String.Empty;
             }
         }
     }

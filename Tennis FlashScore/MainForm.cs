@@ -1,17 +1,13 @@
 ﻿using FlashScore;
 using FlashScore.Enums;
 using FlashScore.Models;
-using FlashScoreAPI.Extensions;
 using NLog;
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Net;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -94,7 +90,7 @@ namespace Tennis_FlashScore
                 InitDriver();
                 bool flag = true;
                 DateTime lastParse = DateTime.Now;
-                Leagues l = 0x0000;
+                Leagues l = 0;
                 if (AppSettings.ProLeague)
                 {
                     l |= Leagues.ProLeagueMen;
@@ -106,6 +102,10 @@ namespace Tennis_FlashScore
                 if (AppSettings.WinCup)
                 {
                     l |= Leagues.WinCupMen;
+                }
+                if(AppSettings.SetkaCup)
+                {
+                    l |= Leagues.SetkaCupMen;
                 }
                 List<Match> matches = new List<Match>();
                 try

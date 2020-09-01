@@ -141,6 +141,10 @@ namespace FlashScore
             {
                 AllMatches.AddRange(await GetMatchesOfLeague(Leagues.WinCupMen, minStartTime,minH2H));
             }
+            if(leagues.HasFlag(Leagues.SetkaCupMen))
+            {
+                AllMatches.AddRange(await GetMatchesOfLeague(Leagues.SetkaCupMen, minStartTime, minH2H));
+            }    
             return AllMatches;
         }
     }

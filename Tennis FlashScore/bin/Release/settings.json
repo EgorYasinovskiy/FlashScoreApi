@@ -1,1 +1,1 @@
-﻿{"MinH2HCount":5,"H2HCountCheck":5,"TotalToCheck":73.5,"ApiTelegramTokenKey":"#PASTE_YOUR_TOKEN_HERE#","ProLeague":true,"TTCup":true,"WinCup":true,"UseLink":false,"MinutesBeforePost":10,"StartPosting":"07:00:00","EndPosting":"22:00:00"}
+﻿{"MinH2HCount":5,"H2HCountCheck":4,"TotalToCheck":73.5,"ApiTelegramTokenKey":"#PASTE_API_TOKEN_HERE#","ProLeague":true,"TTCup":true,"WinCup":false,"SetkaCup":true,"UseLink":false,"MinutesBeforePost":10,"StartPosting":"07:00:00","EndPosting":"22:00:00"}
