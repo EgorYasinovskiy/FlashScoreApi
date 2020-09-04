@@ -103,7 +103,7 @@ namespace Tennis_FlashScore
                 {
                     l |= Leagues.WinCupMen;
                 }
-                if(AppSettings.SetkaCup)
+                if (AppSettings.SetkaCup)
                 {
                     l |= Leagues.SetkaCupMen;
                 }
@@ -120,7 +120,7 @@ namespace Tennis_FlashScore
                 {
                     logger.Error($"Ошибка - {exception.Message} при получении списка матчей. Повтор c в 3 часа ночи.");
                 }
-                matches = matches.Where(m=>m.H2HMatches.Count>=AppSettings.MinH2HCount).OrderBy(m => m.StartTime).ToList();
+                matches = matches.Where(m => m.H2HMatches.Count >= AppSettings.MinH2HCount).OrderBy(m => m.StartTime).ToList();
                 FeelDataGrid(matches);
                 while (IsWorking)
                 {
@@ -129,7 +129,7 @@ namespace Tennis_FlashScore
                     {
                         try
                         {
-                            
+
                             matches = await api.GetMatchesOfSomeLeagues(l, DateTime.Now, AppSettings.MinH2HCount);
                             flag = false;
                             lastParse = DateTime.Now;
@@ -166,7 +166,7 @@ namespace Tennis_FlashScore
                     }
                     for (int i = 0; i < matches.Count; i++)
                     {
-                        if(matches[i].StartTime == DateTime.MinValue)
+                        if (matches[i].StartTime == DateTime.MinValue)
                         {
                             continue;
                         }
@@ -175,9 +175,9 @@ namespace Tennis_FlashScore
                         var startTimeDt = startTime.ToDateTime();
                         if (startTimeDt <= DateTime.Now && startTimeDt.TimeOfDay > AppSettings.StartPosting && startTimeDt.TimeOfDay < AppSettings.EndPosting)
                         {
-                            await telegram.SendToSubs(matches[i],AppSettings);
+                            await telegram.SendToSubs(matches[i], AppSettings);
                         }
-                        if(matches[i].Posted)
+                        if (matches[i].Posted)
                         {
                             matches.RemoveAt(i);
                         }

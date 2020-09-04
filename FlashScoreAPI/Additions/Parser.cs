@@ -1,6 +1,5 @@
 ﻿using FlashScore.Extensions;
 using FlashScore.Models;
-using NLog;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;

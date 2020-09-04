@@ -9,7 +9,6 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Threading.Tasks;
-using SeleniumExtras.WaitHelpers;
 using System.Linq;
 
 namespace FlashScore

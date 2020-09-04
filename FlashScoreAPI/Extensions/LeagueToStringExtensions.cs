@@ -1,9 +1,4 @@
 ﻿using FlashScore.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FlashScoreAPI.Extensions
 {
@@ -19,16 +14,18 @@ namespace FlashScoreAPI.Extensions
         /// <returns>Строковое представление.</returns>
         public static string ToTextString(this Leagues l)
         {
+            string UaFlag = "\U0001F1FA\U0001F1E6";
+            string RuFlag = "\U0001F1F8\U0001F1EE";
             switch (l)
             {
                 case Leagues.ProLeagueMen:
-                    return "\"Лига ПРО\"";
+                    return $"\" {RuFlag} Лига ПРО {RuFlag} \"";
                 case Leagues.TTCupMen:
-                    return "\"TT CUP\"";
+                    return $"\" {UaFlag} TT CUP {UaFlag} \"";
                 case Leagues.WinCupMen:
-                    return "\"Win CUP\"";
+                    return $"\"{UaFlag} Win CUP {UaFlag} \"";
                 case Leagues.SetkaCupMen:
-                    return "\"Setka Cup\"";
+                    return $"\"{UaFlag} Setka Cup {UaFlag} \"";
                 default: 
                     return string.Empty;
             }

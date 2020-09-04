@@ -1,6 +1,5 @@
 ﻿using FlashScore.Models;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -124,6 +123,14 @@ namespace Tennis_FlashScore.Models
                         subscribers = subs;
                     }
                 }
+            }
+        }
+        public async Task Ad(string adText)
+        {
+            foreach(var sub in subscribers)
+            {
+                await Bot.SendTextMessageAsync(sub.ChatId,adText);
+                await Task.Delay(5);
             }
         }
     }
